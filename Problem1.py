@@ -1,6 +1,6 @@
 # Code by amotef@gmail.com
 
-## projecteuler.net
+# projecteuler.net
 # Problem 1
 
 # Multiples of 3 or 5

@@ -20,7 +20,6 @@ def IsEven(n):
     else:
         return False
 
-
 first = 1
 second = 2
 
@@ -39,6 +38,7 @@ print(sum)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
 
 
 # Solution 2

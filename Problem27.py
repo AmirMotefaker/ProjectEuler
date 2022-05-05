@@ -57,7 +57,7 @@ primes1000 = Sieve_of_Eratosthenes(1000)   # primes below 1000
 
 primes = primes1000[:]   # copy of primes1000 variable
 
-largest = 0   # assume the largest value is 0 at start
+largest_value = 0   # assume the largest value is 0 at start
 
 
 for b in primes1000:   # quadratic equation
@@ -69,8 +69,8 @@ for b in primes1000:   # quadratic equation
 				if is_prime(quadratic):
 					primes.append(quadratic)
 				else:
-					if i-1 > largest:
-						largest = i-1
+					if i-1 > largest_value:
+						largest_value = i-1
 						axb = a*b
 					break
 			i += 1
@@ -81,8 +81,8 @@ for b in primes1000:   # quadratic equation
 				if is_prime(quadratic) and quadratic>0:
 					primes.append(quadratic)
 				else:
-					if i-1 > largest:
-						largest = i-1
+					if i-1 > largest_value:
+						largest_value = i-1
 						axb = -1*a*b
 					break
 			i += 1

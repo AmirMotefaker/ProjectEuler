@@ -17,6 +17,10 @@
 
 # What is the total of all the name scores in the file?
 
+
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def main():
 	with open("p022_names.txt") as file:
 		names_file = file
@@ -49,3 +53,6 @@ def score_name(name):
 
 
 main()
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution

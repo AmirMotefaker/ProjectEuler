@@ -4,7 +4,7 @@ Solutions to Project Euler in the Python Language
 https://projecteuler.net/archives
 
 
-# Did You Know... ?
+# Did You Know about Project Euler?
 . There are a total of 1037337 registered members who have solved at least one problem.
 
 . A total of 220 different locations are represented and 108 programming languages are being used to solve the problems.

@@ -26,7 +26,7 @@
 import time
 start_time = time.time()   #Time at the start of program execution
 
-def Square_Difference(n):
+def Square_difference(n):
  
     l = (n * (n + 1) * (2 * n + 1)) / 6  # sum of the squares of the first n natural numbers
     print("l = ", l)
@@ -43,7 +43,7 @@ def Square_Difference(n):
     return m
 
 x = int(input("Enter Number: ")) 
-print("sum of the squares of the first", x,"natural numbers is",  int(Square_Difference(x)))
+print("sum of the squares of the first", x,"natural numbers is", int(Square_difference(x)))
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution

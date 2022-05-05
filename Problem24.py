@@ -32,16 +32,15 @@
 # Solution 2
 
 import time
+start_time = time.time()   #Time at the start of program execution
 
 from itertools import permutations  # import permutations from itertools
 
-start = time.time()
-
 lexi_perm = list(permutations('0123456789'))  # lexi_perm: Lexicographic Permutations. converting the solution to a list(itertools.permutations)
 
-solution = ','.join(lexi_perm[999999])   # Each permutation is in the form of tuple so join all the strings to get solution
+solution = ', '.join(lexi_perm[999999])   # Each permutation is in the form of tuple so join all the strings to get solution
 
 print (solution)
 
-end = time.time()
-print (end - start)
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution

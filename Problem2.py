@@ -12,7 +12,6 @@
 # Solution 1
 
 import time
-
 start_time = time.time()   #Time at the start of program execution
 
 def IsEven(n):
@@ -39,14 +38,12 @@ while (first < 4000000):
 print(sum)
 
 end_time = time.time()   #Time at the end of execution
-
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
 
 
 # Solution 2
 
 # import time
-
 # start_time = time.time()   #Time at the start of program execution
 
 # a, b = 1, 1
@@ -58,5 +55,4 @@ print ("Time of program execution:", (end_time - start_time))   # Time of progra
 # print (total)
 
 # end_time = time.time()   #Time at the end of execution
-
 # print ("Time of program execution:", (end_time - start_time))   # Time of program execution

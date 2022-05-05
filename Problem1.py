@@ -15,10 +15,10 @@ def Zarib3or5(n):
 
 sum = 0
 for i in range (1,1000):
-    # print ("checking" , i)
+    # print ("checking :" , i)
     if Zarib3or5(i):
         # print ("zarib is fine for", i)
         sum = sum + i
-        # print ("Sum is", sum)
+        # print ("Sum is =", sum)
 
 print (sum)

@@ -12,19 +12,19 @@
 
 
 def FLPF(n): # FLPF: Find Largest Prime Factor
-   primeFactor = 1 # A factor that is a prime number
+   PrimeFactor = 1 # A factor that is a prime number
    i = 2
 
    while i <= n / i:
       if n % i == 0:
-         primeFactor = i
+         PrimeFactor = i
          n /= i
       else:
          i += 1
 
-   if primeFactor < n: primeFactor = int(n)
+   if PrimeFactor < n: PrimeFactor = int(n)
 
-   return primeFactor
+   return PrimeFactor
 
 print("Largest prime factor 100 is: ", FLPF(100))
 print("Largest prime factor 13195 is: ", FLPF(13195))

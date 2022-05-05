@@ -9,7 +9,9 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 
-    
+import time
+start_time = time.time()   #Time at the start of program execution    
+
 def largestPalindromeProduct(n):
  
     upper_limit = (10**(n))-1  # largest number of n-1 digit. For example, for n = 2, upper_limit is 99
@@ -39,3 +41,5 @@ n2 = 3
 print('Largest palindrome product', n1, '- digit is: ', largestPalindromeProduct(n1))
 print('Largest palindrome product', n2, '- digit is: ', largestPalindromeProduct(n2))
 
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution

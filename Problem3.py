@@ -11,6 +11,9 @@
 # Example: The prime factors of 15 are 3 and 5 (because 3×5=15, and 3 and 5 are prime numbers).
 
 
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def FLPF(n): # FLPF: Find Largest Prime Factor
    PrimeFactor = 1 # A factor that is a prime number
    i = 2
@@ -29,6 +32,9 @@ def FLPF(n): # FLPF: Find Largest Prime Factor
 print("Largest prime factor 100 is: ", FLPF(100))
 print("Largest prime factor 13195 is: ", FLPF(13195))
 print("Largest prime factor 600851475143 is: ", FLPF(600851475143))
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
 
 # Find the prime factors of 100:
 # 100 ÷ 2 = 50; save 2

@@ -17,6 +17,14 @@
 # If the product of these four fractions is given in its lowest common terms,
 # find the value of the denominator.
 
+# Numerator: the top number of a fraction
+# Denominator: the bottom number of a fraction
+# In a fraction, the denominator represents the number of equal parts in a whole, 
+# and the numerator represents how many parts are being considered.
+
+# Example:
+# 16/64=1/4, 26/65=2/5, 19/95=1/5
+
 # Solution 1
 import time
 start_time = time.time()   #Time at the start of program execution

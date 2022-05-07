@@ -15,6 +15,23 @@
 
 # HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.
 
+# 3 x 1 = 3
+# 3 x 2 = 6
+# 3 x 3 = 9
+# 3 x 4 = 12
+# 3 x 5 = 15
+
+# 4 x 1 = 4
+# 4 x 2 = 8
+# 4 x 3 = 12
+# ...
+
+# In the above looping process after I had seen that the number 12 is a two digit number,
+# and if I have breaked the loop there itself, then we would have saved one iteration.
+# Obviously as we are using python even though you will break from one loop another loop will be working.
+# If you break the loop at 12(3 x 4) then we will again start at 4 x 1 = 4 and so on. 
+# Now in this we will break at 12(4 x 3) again.
+
 
 
 import time

@@ -17,15 +17,15 @@
 import time
 start_time = time.time()   #Time at the start of program execution
 
-target = 200
+target_Pound = 200
 coins = [1, 2, 5, 10, 20, 50, 100, 200]
-ways = [1] + [0]*target
+ways = [1] + [0]*target_Pound
 
 for coin in coins:
-    for i in range(coin, target+1):
+    for i in range(coin, target_Pound+1):
         ways[i] += ways[i-coin]
 
-print ("Ways to make change =", ways[target])
+print ("How many different ways to make £2 =", ways[target_Pound])
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution

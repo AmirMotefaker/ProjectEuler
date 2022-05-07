@@ -50,6 +50,9 @@
 
 
 # Solution 2
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def factorial(n):
     if n == 1 or n == 0:
         return 1
@@ -58,7 +61,7 @@ def factorial(n):
 
 
 def main():
-    grand_total = 0
+    final_total = 0
     for i in range(10, 100000):
         str_i = str(i)
         total = 0
@@ -66,8 +69,11 @@ def main():
             digit = int(digit)
             total += factorial(digit)
         if total == i:
-            grand_total += i
-            print(i, grand_total)
+            final_total += i
+            print(i, final_total)
 
 
 main()
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution

@@ -15,6 +15,15 @@
 
 # HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.
 
+# Pandigital Product: A Pandigital Number is number which makes the use of all digits 1 to 9 exactly once. 
+# Examples: 
+# Input : 7254
+# Output : Yes
+# 39 * 186 = 7254. We can notice that
+# the three numbers 39, 186 and 7254
+# together have all digits from 1 to 9.
+
+# This solution contains:
 # 3 x 1 = 3
 # 3 x 2 = 6
 # 3 x 3 = 9
@@ -31,7 +40,6 @@
 # Obviously as we are using python even though you will break from one loop another loop will be working.
 # If you break the loop at 12(3 x 4) then we will again start at 4 x 1 = 4 and so on. 
 # Now in this we will break at 12(4 x 3) again.
-
 
 
 import time

@@ -15,6 +15,10 @@
 # NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 # Solution 1
+
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def check_if_prime(n):
     if n == 1:
         return False
@@ -46,7 +50,11 @@ def main():
             total += i
         i += 1
     print(list_of_truncatable_primes)
-    print(total)
+    print("Sum of the only eleven primes are both truncatable =", total)
 
 
 main()
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+

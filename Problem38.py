@@ -55,3 +55,62 @@ main()
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+# Solution 2
+
+# For example, take the number 327, Now we will start multiplying it with 1
+# 327 x 1 = 327
+# 327 x 2 = 654
+# 327 x 3 = 981
+# Now the concatenated product is 327654981, whose length is 9 digits so stop iteration and proceed for next decision.
+
+# For example, 7932
+# 7932 x 1 = 7932
+# 7932 x 2 = 15864
+# Concatenated product is 793215864 which has 9 digits and so we can stop here. 
+
+# this link is useful
+# https://radiusofcircle.blogspot.com/2016/05/problem-38-project-euler-solution-with-python.html
+
+
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+# # largest pandigital number
+# largest = 0
+
+# # for loop to loop till 4 digits
+# for i in range(1,10000):
+	
+# 	# value for concatenated product
+# 	multiplication = ''
+	
+# 	# (1,2,3,4,.....n)
+# 	integer = 1
+	
+# 	# if the multiplication < 9 digits
+# 	while len(multiplication) < 9:
+		
+# 		# concatenating the product at each stage
+# 		multiplication += str(i*integer)
+		
+# 		# incrementing (1,2,3,4,....n)
+# 		integer += 1
+		
+# 	# check for digits less than 9
+# 	# check for all 1-9 numbers
+# 	# check if '0' not in concatenated sting
+# 	if ((len(multiplication) == 9) and (len(set(multiplication)) == 9) 
+# 		and ('0' not in multiplication)):
+	
+# 		# check if multiplication is greater than largest
+# 		if int(multiplication) > largest:
+# 			largest = int(multiplication)
+
+# # printing the largest
+# print (largest)
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution

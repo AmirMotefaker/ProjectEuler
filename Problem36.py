@@ -14,6 +14,9 @@
 
 # Solution 1
 
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def palindrome_check(n):
     str_n = str(n)
     for i in range(len(str_n)):
@@ -52,3 +55,33 @@ def main():
 
 
 main()
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+
+# Solution 2
+
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+# def compute():
+# 	ans = sum(i for i in range(1000000) if is_decimal_binary_palindrome(i))
+# 	return str(ans)
+
+
+# def is_decimal_binary_palindrome(n):
+# 	s = str(n)
+# 	if s != s[ : : -1]:
+# 		return False
+# 	t = bin(n)[2 : ]
+# 	return t == t[ : : -1]
+
+
+# if __name__ == "__main__":
+# 	print(compute())
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution

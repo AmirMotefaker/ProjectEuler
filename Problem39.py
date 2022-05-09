@@ -31,6 +31,8 @@
 # 100,000,000 = 77,597,520
 
 
+# Solution 1
+
 import time
 start_time = time.time()   #Time at the start of program execution
 
@@ -48,3 +50,27 @@ print ("Triangles in set =", t_max)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+# Solution 2
+
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+# from collections import Counter   # Counter method
+
+# perimeters = []   # list to store perimeters
+
+# for a in range(1, 500):   # looping to generate a,b and c
+#     for b in range(a, 500):
+#         c = (a**2 + b**2)**0.5
+#         if int(c) == c and a + b + c <= 1000:
+#             perimeters.append(a+b+c)
+
+# p = Counter(perimeters)   # counting the instances of perimeters
+
+# print (p.most_common(1)[0])   # printing the most common perimeter or printing the most repeated perimeter
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution

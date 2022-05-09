@@ -19,6 +19,12 @@
 # What is the largest 1 to 9 pandigital 9-digit number that can be formed as the 
 # concatenated product of an integer with (1,2, ... , n) where n > 1?
 
+
+# Solution 1
+
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def check_if_pandigital(n):
     str_n = str(n)
     if len(str_n) != 9:
@@ -46,3 +52,6 @@ def main():
     print(max(answers))
 
 main()
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution

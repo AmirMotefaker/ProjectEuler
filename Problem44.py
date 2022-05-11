@@ -36,24 +36,26 @@
 # D is s-2*Pj which is simplified from (s-Pj)-Pj
 
 
-# import time
-# start_time = time.time()   #Time at the start of program execution
+# Solution 1
 
-# def value_of_D():
-#     ps = set()
-#     i = 1000
-#     while True:
-#         i += 1
-#         s = (3*i*i - i) // 2
-#         for Pj in ps:
-#             if s-Pj in ps and s-2*Pj in ps: 
-#                 return s-2*Pj
-#         ps.add(s)
+import time
+start_time = time.time()   #Time at the start of program execution
 
-# print ("the value of D =", value_of_D())
+def value_of_D():
+    ps = set()
+    i = 1000
+    while True:
+        i += 1
+        s = (3*i*i - i) // 2
+        for Pj in ps:
+            if s-Pj in ps and s-2*Pj in ps: 
+                return s-2*Pj
+        ps.add(s)
 
-# end_time = time.time()   #Time at the end of execution
-# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+print ("the value of D =", value_of_D())
+
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
 
 
 
@@ -68,28 +70,28 @@
 # (1+(24n+1)1/2)/6 is an integer or not.
 
 
-import time
-start_time = time.time()   #Time at the start of program execution
+# import time
+# start_time = time.time()   #Time at the start of program execution
 
 
-def is_pentagonal(n):   # check if the number is pentagonal number or not
-    if (1+(24*n+1)**0.5) % 6 == 0:
-        return True
-    return False
+# def is_pentagonal(n):   # check if the number is pentagonal number or not
+#     if (1+(24*n+1)**0.5) % 6 == 0:
+#         return True
+#     return False
 
-flag = True   # check if the number is found or not
+# flag = True   # check if the number is found or not
 
-i = 1   # loop iterator
+# i = 1   # loop iterator
 
-while flag:
-    for j in range(1, i):
-        a = i*(3*i-1)/2
-        b = j*(3*j-1)/2
-        if is_pentagonal(a+b) and is_pentagonal(a-b):
-            print (a-b)
-            flag = False
-            break
-    i += 1
+# while flag:
+#     for j in range(1, i):
+#         a = i*(3*i-1)/2
+#         b = j*(3*j-1)/2
+#         if is_pentagonal(a+b) and is_pentagonal(a-b):
+#             print (a-b)
+#             flag = False
+#             break
+#     i += 1
 
-end_time = time.time()   #Time at the end of execution
-print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution

@@ -18,6 +18,24 @@
 # sum and difference are pentagonal and D = |Pk − Pj| is minimised;
 # what is the value of D?
 
+
+# Solution 1
+
+# When the problem asks for D = |Pk − Pj| to be minimized it simply
+# means the numerically closest pair which, by our method,
+# is the first occurrence found.
+
+# We search by sum and difference instead of by Pj and Pk and this 
+# caused some confusion. This was the best we we could think of to 
+# minimize D without having to force comparisons.
+
+# The variable names have been changed to make this more clear:
+# s is the sum Pk + Pj
+# Pj is, well, Pj
+# s-Pj is Pk
+# D is s-2*Pj which is simplified from (s-Pj)-Pj
+
+
 import time
 start_time = time.time()   #Time at the start of program execution
 
@@ -36,5 +54,4 @@ print ("the value of D =", value_of_D())
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
-
 

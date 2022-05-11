@@ -88,33 +88,33 @@
 # try all permutations from 1 to 9 starting with 1 digit and going up,
 # filtering all prime numbers and, then, taking largest one.
 
-# from itertools import permutations
-# import time
+from itertools import permutations
+import time
 
-# start_time = time.time()   #Time at the start of program execution
+start_time = time.time()   #Time at the start of program execution
 
 
-# def is_prime(n):
-#     for i in range(2, int(n**0.5)+1):
-#         if n % i == 0:
-#             return False
-#     return True
+def is_prime(n):
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
 
 # permutations of numbers from 1-7
-# p = permutations('1234567')
+p = permutations('1234567')
 
 # for loop to loop from reverse order
 # from higher to lower
-# for i in list(p)[::-1]:
-#     if int(i[6]) % 2 != 0:
-#         number = int(''.join(i))
-#         if (number+1) % 6 == 0 or (number-1) % 6 == 0:
-#             if is_prime(number):
-#                 print (number)
-#                 break
+for i in list(p)[::-1]:
+    if int(i[6]) % 2 != 0:
+        number = int(''.join(i))
+        if (number+1) % 6 == 0 or (number-1) % 6 == 0:
+            if is_prime(number):
+                print (number)
+                break
 
-# end_time = time.time()   #Time at the end of execution
-# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
 
 
 # Solution 3
@@ -143,29 +143,29 @@
 # but this turned out to be of little consequence.
 # Since we want the largest pandigital prime we’ll start with 7 digit numbers.
 
-def is_pandigital(n, s=9): n=str(n); return len(n)==s and not '1234567890'[:s].strip(n)
+# def is_pandigital(n, s=9): n=str(n); return len(n)==s and not '1234567890'[:s].strip(n)
 
-import time
-start_time = time.time()   #Time at the start of program execution
+# import time
+# start_time = time.time()   #Time at the start of program execution
 
-def is_prime(n):
-    if n <= 1: return False
-    if n <= 3: return True
-    if n%2==0 or n%3 == 0: return False
-    r = int(n**0.5)
-    f = 5
-    while f <= r:
-        if n%f == 0 or n%(f+2) == 0: return False
-        f+= 6
-    return True
+# def is_prime(n):
+#     if n <= 1: return False
+#     if n <= 3: return True
+#     if n%2==0 or n%3 == 0: return False
+#     r = int(n**0.5)
+#     f = 5
+#     while f <= r:
+#         if n%f == 0 or n%(f+2) == 0: return False
+#         f+= 6
+#     return True
 
 
-n = 7654321
+# n = 7654321
 
-while not(is_pandigital(n, 7) and is_prime(n)): n-= 2
+# while not(is_pandigital(n, 7) and is_prime(n)): n-= 2
 
-print ("The largest existing n-digit pandigital prime is", n)
+# print ("The largest existing n-digit pandigital prime is", n)
 
-end_time = time.time()   #Time at the end of execution
-print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
 

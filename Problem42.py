@@ -18,10 +18,12 @@
 # a 16K text file containing nearly two-thousand common English words,
 # how many are triangle words?
 
-# Solution 1
-# from math import sqrt
 
+# Solution 1
+
+# from math import sqrt
 # import time
+
 # start_time = time.time()   #Time at the start of program execution
 
 # score = lambda word: sum(ord(c)-ord('A')+1 for c in word)
@@ -35,6 +37,7 @@
 
 
 # Solution 2
+
 import string
 import csv
 import math

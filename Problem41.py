@@ -44,36 +44,76 @@
 # print the prime number and then flag = False to stop the outer while loop and break
 # to stop the present for loop.
 
-from itertools import permutations  # permutations: Return successive r length permutations of elements in the iterable.
+# from itertools import permutations  # permutations: Return successive r length permutations of elements in the iterable.
+# import time
+
+# start_time = time.time()   #Time at the start of program execution
+
+
+# def is_prime(n):  # check if the given number is prime or not.
+#     for i in range(2, int(n**0.5)+1):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# a = '123456789'  # starting with 1-9 digits
+
+# flag = True  # flag to stop while loop when prime is found
+
+# j = 9   # while loop iterator
+
+# while flag:
+#     p = permutations(a[:j])
+#     p = list(p)[::-1]
+#     for i in p:
+#         if int(i[j-1]) % 2 != 0:
+#             number = int(''.join(i))
+#             if (number+1) % 6 == 0 or (number-1) % 6 == 0:
+#                 if is_prime(number):
+#                     print (number)
+#                     flag = False
+#                     break
+#     j -= 1
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+# Solution 2
+# fastest algorithm
+
+# A pandigital number doesn't needs to contain all numbers from 1 to 9,
+# but all from 1 to length.
+# try all permutations from 1 to 9 starting with 1 digit and going up,
+# filtering all prime numbers and, then, taking largest one.
+
+from itertools import permutations
 import time
 
 start_time = time.time()   #Time at the start of program execution
 
 
-def is_prime(n):  # check if the given number is prime or not.
+def is_prime(n):
+    """Function to check if
+    the given number is prime"""
     for i in range(2, int(n**0.5)+1):
         if n % i == 0:
             return False
     return True
 
-a = '123456789'  # starting with 1-9 digits
+# permutations of numbers from 1-7
+p = permutations('1234567')
 
-flag = True  # flag to stop while loop when prime is found
-
-j = 9   # while loop iterator
-
-while flag:
-    p = permutations(a[:j])
-    p = list(p)[::-1]
-    for i in p:
-        if int(i[j-1]) % 2 != 0:
-            number = int(''.join(i))
-            if (number+1) % 6 == 0 or (number-1) % 6 == 0:
-                if is_prime(number):
-                    print (number)
-                    flag = False
-                    break
-    j -= 1
+# for loop to loop from reverse order
+# from higher to lower
+for i in list(p)[::-1]:
+    if int(i[6]) % 2 != 0:
+        number = int(''.join(i))
+        if (number+1) % 6 == 0 or (number-1) % 6 == 0:
+            if is_prime(number):
+                print (number)
+                break
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution

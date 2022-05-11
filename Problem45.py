@@ -50,6 +50,9 @@
 
 # Solution 2
 
+import time
+start_time = time.time()   #Time at the start of program execution
+
 def generate_triangle_number(n):
     return(n*(n+1)/2)
 
@@ -81,4 +84,9 @@ def main():
             print(hexagonal_number)
 
 
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
 main()
+
+

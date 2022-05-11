@@ -19,7 +19,6 @@ import time
 
 start_time = time.time()   #Time at the start of program execution
 
-
 def is_prime(n):  # check if the given number is prime or not.
     for i in range(2, int(n**0.5)+1):
         if n % i == 0:

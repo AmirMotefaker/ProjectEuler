@@ -33,11 +33,9 @@
 # prime number or we can say - We can iterate with the prime numbers below number. 
 # Value of some_number((number-prime)/2) should be a perfect number.
 
-import math
+import math, time
 
-import time
 start_time = time.time()   #Time at the start of program execution
-
 
 def is_prime(n):
     if n % 2 == 0:
@@ -67,3 +65,5 @@ while True:
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+

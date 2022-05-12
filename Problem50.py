@@ -16,6 +16,33 @@
 
 # Which prime, below one-million, can be written as the sum of the most consecutive primes?
 
+
+# Step 1: Make a list of prime numbers upto 1 million.
+
+# Step 2: Create a variable to store length, consecutive prime sum and maximum value
+# the second for loop iterator can take. Lets call them length, largest, lastj respectively.
+
+# Step 3: Start a for loop(call this loop first for loop) and the maximum value 
+# upto which it can loop will be upto the length of the prime numbers list generated in Step 1
+
+# Step 4: Start another for loop(call this loop second for loop) nested in the 
+# for loop of Step 3, and set the start value of the for loop as iterator value
+# of first for loop added with the previous length of the largest consecutive prime sum.
+
+# Step 5: Find the sum of the prime numbers after slicing the list with the 
+# values of the iterator. Example: primes[i:j]
+
+# Step 6: Check if the sum of the primes in of the sub list is less than 1 million. 
+# If the value is less than 1 million then continue for Step 7, 
+# otherwise change the value of the lastj to the value of j+1 and break the second for loop.
+
+# Step 7: Check if the sum of the primes is a prime number and if it is a prime number,
+# then change the value of length, to the length of the list generated in Step 5 and 
+# the value of largest to the sum of the primes sub list.
+
+# Step 8: Continue for the next iteration after this iteration is over.
+# Finally print the value of largest to find the answer.
+
 import time
 start_time = time.time()   #Time at the start of program execution
 

@@ -20,6 +20,19 @@
 # What is the smallest odd composite that cannot be written as the sum of a prime and twice a square?
 
 
+# We will start with number 3. As we don't know the upper limit, 
+# we will use a while loop. Question states that the number on 
+# the left hand side is a composite odd number. Now let us consider
+# the equation given in the question as follows:
+
+# number = prime + 2 × some_number2
+# ⇒ some_number = ((number-prime)/2)1/2
+
+# In the above equation for some_number to be a positive integer 
+# there are two conditions, value of number should be greater than 
+# prime number or we can say - We can iterate with the prime numbers below number. 
+# Value of some_number((number-prime)/2) should be a perfect number.
+
 import math
 
 import time

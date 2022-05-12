@@ -45,81 +45,81 @@
 # Step 8: Continue for the next iteration after this iteration is over.
 # Finally print the value of largest to find the answer.
 
-# import time
-# start_time = time.time()   #Time at the start of program execution
+import time
+start_time = time.time()   #Time at the start of program execution
 
 
-# def sieve(n):
-#     is_prime = [True]*n
-#     is_prime[0] = False
-#     is_prime[1] = False
-#     is_prime[2] = True
-#     for i in range(3, int(n**0.5+1), 2):    # even numbers except 2 have been eliminated
-#         index = i*2
-#         while index < n:
-#             is_prime[index] = False
-#             index = index+i
-#     prime = [2]
-#     for i in range(3, n, 2):
-#         if is_prime[i]:
-#             prime.append(i)
-#     return prime
+def sieve(n):
+    is_prime = [True]*n
+    is_prime[0] = False
+    is_prime[1] = False
+    is_prime[2] = True
+    for i in range(3, int(n**0.5+1), 2):    # even numbers except 2 have been eliminated
+        index = i*2
+        while index < n:
+            is_prime[index] = False
+            index = index+i
+    prime = [2]
+    for i in range(3, n, 2):
+        if is_prime[i]:
+            prime.append(i)
+    return prime
 
-# primes = sieve(1000000)
+primes = sieve(1000000)
 
-# length = 0   # length of the consecutive prime sum
+length = 0   # length of the consecutive prime sum
 
-# largest = 0  # value of the consecutive prime sum
+largest = 0  # value of the consecutive prime sum
 
-# lastj = len(primes)   # max value of the j variable(second for loop)
+lastj = len(primes)   # max value of the j variable(second for loop)
 
-# for i in range(len(primes)):
-#     for j in range(i+length, lastj):
-#         sol = sum(primes[i:j])
-#         if sol < 1000000:
-#             if sol in primes:
-#                 length = j-i
-#                 largest = sol
-#         else:
-#             lastj = j+1
-#             break
+for i in range(len(primes)):
+    for j in range(i+length, lastj):
+        sol = sum(primes[i:j])
+        if sol < 1000000:
+            if sol in primes:
+                length = j-i
+                largest = sol
+        else:
+            lastj = j+1
+            break
 
-# print (largest)
+print (largest)
 
-# end_time = time.time()   #Time at the end of execution
-# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution
 
 
 
 # Solution 2
 
-from sympy import *   # SymPy is a Python library for symbolic mathematics.
-import time
+# from sympy import *   # SymPy is a Python library for symbolic mathematics.
+# import time
 
-start_time = time.time()   #Time at the start of program execution
+# start_time = time.time()   #Time at the start of program execution
 
-def alg(n):
-    primes =[]
-    i=2
-    while sum(primes)<n:
-        if isprime(i):
-            primes.append(i)
-        i=i+1
-    fin_seq=[];l=len(primes);j=l
-    while j!= 0:
-        i=0
-        while i+j<l+1:
-            seq = primes[i:i+j]
-            if sum(seq)<=n:
-                if isprime(sum(seq)):
-                    if len(seq)>len(fin_seq):
-                        fin_seq = seq
-            i=i+1
-        j=j-1
-    return(sum(fin_seq))
+# def alg(n):
+#     primes =[]
+#     i=2
+#     while sum(primes)<n:
+#         if isprime(i):
+#             primes.append(i)
+#         i=i+1
+#     fin_seq=[];l=len(primes);j=l
+#     while j!= 0:
+#         i=0
+#         while i+j<l+1:
+#             seq = primes[i:i+j]
+#             if sum(seq)<=n:
+#                 if isprime(sum(seq)):
+#                     if len(seq)>len(fin_seq):
+#                         fin_seq = seq
+#             i=i+1
+#         j=j-1
+#     return(sum(fin_seq))
 
-start = time.time()
-print(alg(1000000))
+# start = time.time()
+# print(alg(1000000))
 
-end_time = time.time()   #Time at the end of execution
-print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution

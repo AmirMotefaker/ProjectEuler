@@ -53,6 +53,22 @@
 
 # Solution 2
 
+# step 1: Prime sieve upto 10000.
+# step 2: Remove all the primes less than 1487 in the primes list 
+#         which we have created in Step 1.
+# step 3: Take each and every prime number and create permutations 
+#         of the prime number.
+# step 4: Remove all the duplicates in the list generated in Step 3.
+#         Only unique elements are entertained.
+# step 5: Sort the list in ascending order.
+# step 6: If the length of the list generated till Step 5 is greater 
+#         than or equal to 3 then go to Step 7 otherwise continue for next iteration.
+# step 7: Start a for loop to iterate through each and every number in the list.
+#         in the iteration, take a number and subtract it with other number, call it difference.
+#         Now add the difference to the second element under consideration and check if the
+#         new element(second number + difference) is in the list. If the new number is in the
+#         list stop looping and return the three numbers, else continue with the next list.
+
 from itertools import permutations
 import time
 

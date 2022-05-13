@@ -1,6 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=20
 
 # Factorial digit sum
 # Problem 20

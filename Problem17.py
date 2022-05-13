@@ -1,8 +1,9 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=17
 
-# Number Letter Counts
+# Number letter counts
 # Problem 17
 
 # If the numbers 1 to 5 are written out in words: one, two, three, four, five,

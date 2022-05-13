@@ -1,6 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=33
 
 # Digit cancelling fractions
 # Problem 33

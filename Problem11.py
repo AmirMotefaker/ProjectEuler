@@ -1,9 +1,10 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
-# Problem 11
+# https://projecteuler.net/problem=11
 
 # Largest product in a grid
+# Problem 11
 
 # In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
 # c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 c10c11c12c13c14c15c16c17c18c19

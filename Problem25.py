@@ -1,6 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=25
 
 # 1000-digit Fibonacci number
 # Problem 25

@@ -1,6 +1,7 @@
 # Code by lukegarbutt & amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=14
 
 # Longest Collatz sequence
 # Problem 14

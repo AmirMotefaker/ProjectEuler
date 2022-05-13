@@ -1,10 +1,10 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=27
 
 # Quadratic primes
 # Problem 27
-
 
 # Euler discovered the remarkable quadratic formula:
 #                n² + n + 41

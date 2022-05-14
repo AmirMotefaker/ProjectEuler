@@ -1,6 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=39
 
 # Integer right triangles
 # Problem 39

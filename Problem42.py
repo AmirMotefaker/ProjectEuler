@@ -1,6 +1,7 @@
 # Code by amotef@gmail.com
 
 # projecteuler.net
+# https://projecteuler.net/problem=42
 
 # Coded triangle numbers
 # Problem 42

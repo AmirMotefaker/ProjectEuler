@@ -3,7 +3,6 @@
 # projecteuler.net
 # https://projecteuler.net/problem=49
 
-
 # Prime permutations
 # Problem 49
 

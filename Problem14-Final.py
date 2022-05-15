@@ -56,3 +56,7 @@ def collatz(number):
 	number = int(number)
 	return(number)
 main()
+
+
+
+### Answer:  837799

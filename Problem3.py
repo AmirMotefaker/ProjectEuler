@@ -48,3 +48,7 @@ print ("Time of program execution:", (end_time - start_time))   # Time of progra
 # 5 ÷ 5 = 1; save 5
 
 # List the resulting prime factors as a sequence of multiples, 2 x 2 x 5 x 5 or as factors with exponents, 2**2 x 5**2.
+
+
+
+### Answer:  6857

@@ -80,3 +80,7 @@ print ('Found {} in {} iterations'.format(number[0][0],counter))
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+### Answer:  1074

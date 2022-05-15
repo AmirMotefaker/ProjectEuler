@@ -68,3 +68,7 @@ print ("Sum of all Products as a 1 through 9 pandigital =", sum(products))
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+### Answer:  45228

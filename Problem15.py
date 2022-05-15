@@ -33,3 +33,7 @@ print ('Number of lattice paths is: '+str(BCF(20+20,20)))
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+### Answer:  137846528820

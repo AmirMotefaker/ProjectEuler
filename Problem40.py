@@ -33,6 +33,7 @@
 
 
 
+### Answer:  210
 # Solution 2
 
 # We have 9, 1 digit numbers

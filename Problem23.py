@@ -101,3 +101,7 @@ for i in range(len(ab)):   # generate sum of two abundant numbers
 print (sum(non_ab_sum))   # value of the sum of non abundant sum
         
 print (time.time() -start)   # total execution time
+
+
+
+### Answer:  4179871

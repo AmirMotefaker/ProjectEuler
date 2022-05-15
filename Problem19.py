@@ -27,3 +27,6 @@ for year in range(1901,2001):
         if datetime.datetime(year,month,1).weekday() == 6: Counting_Sundays += 1
 print (Counting_Sundays)
             
+
+    
+### Answer:  171

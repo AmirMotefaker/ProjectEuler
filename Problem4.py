@@ -45,3 +45,7 @@ print('Largest palindrome product', n2, '- digit is: ', largestPalindromeProduct
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+### Answer:  906609

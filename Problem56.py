@@ -62,3 +62,7 @@ print (max(sum(map(int, str(a**b))) for a in range(60, 100) for b in range(80, 1
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   #Time of program execution
+
+
+
+#### Answer:  972

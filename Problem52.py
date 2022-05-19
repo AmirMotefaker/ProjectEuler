@@ -50,3 +50,8 @@ n = 99999
 while not f(n*2) == f(n*3) == f(n*4) == f(n*5) == f(n*6): n += 9
 
 print ("Permuted multiples(smallest positive integer) =", n)
+
+
+
+
+#### Answer:  142857

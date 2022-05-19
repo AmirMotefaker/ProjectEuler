@@ -26,26 +26,39 @@
 #    is lesser than the present one, then assign the present value to the largest.
 #    In a similar way continue till the end of the loop.
 
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+
+# def sum_of_digits(n):   #sum of digits of given number
+#     sod = 0
+#     while n != 0:
+#         sod += n % 10
+#         n //= 10
+#     return sod
+
+# largest = 0
+
+# for a in range(0, 100):
+#     for b in range(0, 100):
+#         sod = sum_of_digits(a**b)
+#         if sod > largest:
+#             largest = sod
+
+# print (largest)
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   #Time of program execution
+
+
+
+# Solution 2 - fastest algorithm
+
 import time
 start_time = time.time()   #Time at the start of program execution
 
-
-def sum_of_digits(n):   #sum of digits of given number
-    sod = 0
-    while n != 0:
-        sod += n % 10
-        n //= 10
-    return sod
-
-largest = 0
-
-for a in range(0, 100):
-    for b in range(0, 100):
-        sod = sum_of_digits(a**b)
-        if sod > largest:
-            largest = sod
-
-print (largest)
+print ("Maximum digital sum =",)
+print (max(sum(map(int, str(a**b))) for a in range(60, 100) for b in range(80, 100)))
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   #Time of program execution

@@ -49,22 +49,47 @@
 # The value of r in nCr will be in range of 4, n-4 i.e 
 # we can neglect the value of 0, 1, 2, 3, n-3, n-2, n-1, n. 
 
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+# from math import factorial as f
+
+# counter = 0
+
+# def ncr(n, r):   # ncr: find the combinatorics
+#     return f(n)/(f(r)*f(n-r))
+
+# for n in range(23, 101):
+#     for r in range(4, n-3):
+#         if ncr(n, r) > 1000000:
+#             counter += 1
+
+# print (counter)
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+# Solution 3 - sympy
+
 import time
 start_time = time.time()   #Time at the start of program execution
 
-from math import factorial as f
+from sympy import binomial
+# SymPy is a Python library for symbolic mathematics.
+# It aims to become a full-featured computer algebra system (CAS)
+# while keeping the code as simple as possible in order to be comprehensible and easily extensible.
 
-counter = 0
+L, maxn, c = 1000000, 100, 0
 
-def ncr(n, r):   # ncr: find the combinatorics
-    return f(n)/(f(r)*f(n-r))
+for n in range(23, maxn + 1):
+    for r in range(2, n//2):
+        if binomial(n, r) > L:
+            c+= n - 2*r + 1
+            break
 
-for n in range(23, 101):
-    for r in range(4, n-3):
-        if ncr(n, r) > 1000000:
-            counter += 1
-
-print (counter)
+print ("Combinatoric selections =", c)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution

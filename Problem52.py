@@ -64,6 +64,9 @@
 # Also, because any number and its permutation always differ by a multiple of 9
 # (ex., (45121-11542)/9 = 3731) we can increment by 9 instead of 1.
 
+import time
+start_time = time.time()   #Time at the start of program execution
+
 f = lambda n:sorted(str(n))
 
 n = 99999
@@ -71,3 +74,5 @@ while not f(n*2) == f(n*3) == f(n*4) == f(n*5) == f(n*6): n += 9
 
 print ("Permuted multiples(smallest positive integer) =", n)
 
+end_time = time.time()   #Time at the end of execution
+print ("Time of program execution:", (end_time - start_time))   # Time of program execution

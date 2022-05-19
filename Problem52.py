@@ -43,6 +43,26 @@
 
 
 # Solution 2 - fastest 
+# This is repeating digits:
+
+# 1/7 = 0.142857 142857 142857 ...
+# 2/7 = 0.285714 285714 285714 ...
+# 3/7 = 0.428571 428571 428571 ...
+# 4/7 = 0.571428 571428 571428 ...
+# 5/7 = 0.714285 714285 714285 ...
+# 6/7 = 0.857142 857142 857142 ...
+
+# I’m sure you get the idea without giving away the answer.
+
+# As for our programmatic solution: an assumption that the 
+# digits didn’t have to be unique, I set the number of digits
+# less one as our starting bound and search sequentially by 
+# sorting the digits within each number and comparing for multiples 1, 2, 3, 4, 5 and 6.
+
+# We can begin our search with a 5 digit multiple of 9, such as 99999, 
+# because the result has at least 6 digits.
+# Also, because any number and its permutation always differ by a multiple of 9
+# (ex., (45121-11542)/9 = 3731) we can increment by 9 instead of 1.
 
 f = lambda n:sorted(str(n))
 
@@ -51,7 +71,3 @@ while not f(n*2) == f(n*3) == f(n*4) == f(n*5) == f(n*6): n += 9
 
 print ("Permuted multiples(smallest positive integer) =", n)
 
-
-
-
-#### Answer:  142857

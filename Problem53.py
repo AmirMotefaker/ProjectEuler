@@ -72,6 +72,21 @@
 
 
 # Solution 3 - sympy
+# The best way to solve this problem is to use the Pascal triangle:
+# 	                            1	
+#                           1		1	
+#                       1		2		1	
+#                   1		3		3		1	
+#               1		4		6		4		1	
+#           1		5		10		10		5		1	
+#       1		6		15		20		15		6		1	
+#   1		7		21		35		35		21		7		1
+
+# Each row of this triangle is vertically symmetric,
+# so C(n, r) = C(n, n-r) and any C(n, x) for x from r to (n-r) is greater than C(n, r).
+
+# If C(n, r) > 106 then C(n, x) for x from r to (n-r) will also > 106,
+# therefore, the number of C(n, r) > 106, is simply (n-r)-r+1 for that row n.
 
 import time
 start_time = time.time()   #Time at the start of program execution
@@ -93,7 +108,3 @@ print ("Combinatoric selections =", c)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution
-
-
-
-#### Answer:  4075

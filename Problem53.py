@@ -17,21 +17,54 @@
 
 # Solution 1
 
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+# from math import factorial
+
+# def choose(n, r):
+# 	return factorial(n) / (factorial(r) * factorial (n-r))
+
+# count = 0
+# for n in range(1, 101):
+# 	for r in range(1, n+1):
+# 		if choose(n, r) > 1000000:
+# 			count += 1
+
+# print(count)
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   # Time of program execution
+
+
+
+# Solution 2
+
+# Step 1:
+# As you all know that two for loops required, one for n and one for r in nCr.
+# According to the question the value of n(i.e first for loop) will start from 23 and end at 100. 
+# Value of r is discussed in (2).
+
+# Step 2:
+# The value of r in nCr will be in range of 4, n-4 i.e 
+# we can neglect the value of 0, 1, 2, 3, n-3, n-2, n-1, n. 
+
 import time
 start_time = time.time()   #Time at the start of program execution
 
-from math import factorial
+from math import factorial as f
 
-def choose(n, r):
-	return factorial(n) / (factorial(r) * factorial (n-r))
+counter = 0
 
-count = 0
-for n in range(1, 101):
-	for r in range(1, n+1):
-		if choose(n, r) > 1000000:
-			count += 1
+def ncr(n, r):   # ncr: find the combinatorics
+    return f(n)/(f(r)*f(n-r))
 
-print(count)
+for n in range(23, 101):
+    for r in range(4, n-3):
+        if ncr(n, r) > 1000000:
+            counter += 1
+
+print (counter)
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   # Time of program execution

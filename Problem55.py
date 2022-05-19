@@ -47,25 +47,54 @@
 # check if it is Lychrel number using the function created in Step 1. 
 # If the number is Lychrel then increase the counter by 1.
 
+# import time
+# start_time = time.time()   #Time at the start of program execution
+
+
+# def is_lychrel(n):   #check is lychrel number or not
+#     for i in range(50):      #fifty iterations
+#         number = n + int(str(n)[::-1])  #sum of number and reverse
+#         if str(number) == str(number)[::-1]:   #check palindrome
+#             return False
+#         n = number
+#     return True
+
+# counter = 0
+
+# for i in range(10001):
+#     if is_lychrel(i):
+#         counter += 1
+
+# print (counter)
+
+# end_time = time.time()   #Time at the end of execution
+# print ("Time of program execution:", (end_time - start_time))   #Time of program execution
+
+
+
+# Solution 2
+
+# The function is_lychrel() takes the candidate and adds itself to its reverse.
+# If this sum is a palindrome then it’s not a Lychrel number and we return a false (zero) result.
+# This process is repeated up to 49 (depth) times and returns true (one) only
+# if it passes all iterations without producing a palindrome. 
+# This does not confirm with irrefutability the number to be a Lychrel number 
+# as deeper iterations could disprove the number’s Lychrel status. 
+
 import time
 start_time = time.time()   #Time at the start of program execution
 
+def is_palindromic(n): n=str(n); return n==n[::-1]
+L = 10000
 
-def is_lychrel(n):   #check is lychrel number or not
-    for i in range(50):      #fifty iterations
-        number = n + int(str(n)[::-1])  #sum of number and reverse
-        if str(number) == str(number)[::-1]:   #check palindrome
-            return False
-        n = number
-    return True
+def is_lychrel(n, depth=49):
+    for _ in range(depth):
+        n+= int(str(n)[::-1])
+        if is_palindromic(n): return 0
+    return 1
 
-counter = 0
-
-for i in range(10001):
-    if is_lychrel(i):
-        counter += 1
-
-print (counter)
+print (" Lychrel numbers below", L, "=",)
+print (sum(is_lychrel(n) for n in range(10, L)))
 
 end_time = time.time()   #Time at the end of execution
 print ("Time of program execution:", (end_time - start_time))   #Time of program execution

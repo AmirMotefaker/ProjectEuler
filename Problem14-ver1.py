@@ -1,4 +1,4 @@
-# Code by lukegarbutt & amotef@gmail.com
+# Code by lukegarbutt & @AmirMotefaker
 
 # projecteuler.net
 # https://projecteuler.net/problem=14

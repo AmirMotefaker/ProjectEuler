@@ -12,7 +12,7 @@
 import time
 start_time = time.time()   #Time at the start of program execution
 
-def Zarib3or5(n):
+def multiple_3_or_5(n):
     if n % 3 ==0 or n % 5 ==0:
         return True
     else:
@@ -21,8 +21,8 @@ def Zarib3or5(n):
 sum = 0
 for i in range (1,1000):
     # print ("checking :" , i)
-    if Zarib3or5(i):
-        # print ("zarib is fine for", i)
+    if multiple_3_or_5(i):
+        # print ("multiple is fine for", i)
         sum = sum + i
         # print ("Sum is =", sum)
 

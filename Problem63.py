@@ -25,17 +25,32 @@
 
 # Solution 2
 
-counter = 0
+# counter = 0
 
-# for loop to loop from 1 to 9
-for i in range(1, 10):
-    power = 1
-    while True:
-        if power == len(str(i ** power)):
-            counter += 1
-        else:
-            break
-        power += 1
+# # for loop to loop from 1 to 9
+# for i in range(1, 10):
+#     power = 1
+#     while True:
+#         if power == len(str(i ** power)):
+#             counter += 1
+#         else:
+#             break
+#         power += 1
 
-# print the number of instances found
-print (counter)
+# # print the number of instances found
+# print (counter)
+
+
+
+# Solution 3
+
+def compute():
+	ans = sum(1
+		for i in range(1, 10)
+		for j in range(1, 22)
+		if len(str(i**j)) == j)
+	return str(ans)
+
+
+if __name__ == "__main__":
+	print(compute())

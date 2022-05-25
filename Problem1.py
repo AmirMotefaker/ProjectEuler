@@ -1,4 +1,5 @@
 # Code by @AmirMotefaker
+# https://codereview.stackexchange.com/questions/276758/project-euler-problem-1-multiples-of-3-or-5-python
 
 # projecteuler.net
 # Problem 1

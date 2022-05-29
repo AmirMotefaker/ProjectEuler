@@ -69,7 +69,6 @@
 #             print(p)
  
  
-# # Driver code
 # if __name__ == '__main__':   # allow or prevent parts of code from being run when the modules are imported. 
 #     n = int(input("Enter Your Number: "))
 #     print("Following are the prime numbers smaller than or equal to",n, "is:")

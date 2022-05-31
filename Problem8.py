@@ -73,4 +73,28 @@ print ("Time of program execution:", (end_time - start_time))   # Time of progra
 
 
 
+# Solution 2 - Find the Largest product in a Series
+# from itertools import islice
+# from functools import reduce
+
+# def greatest_product(n):
+#     numbers=[int(value) for value in n]
+#     result=[reduce(lambda x,y: x*y, islice(numbers, i, i+5), 1) for i in range(len(numbers)-4)]
+#     return max(result) 
+
+# print(greatest_product("123834539327238239583"))
+
+
+# Solution 3 - Find the Largest product in a Series
+# from math import prod
+
+# def greatest_product(s, m=0):
+#     for i in range(0, len(s)-4):
+#         m = max(m, prod(map(int,s[i:i+5])))
+#     return m
+
+# print(greatest_product("123834539327238239583"))
+
+
+
 ### Answer:  23514624000

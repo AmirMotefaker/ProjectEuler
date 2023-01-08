@@ -1,7 +1,5 @@
 # ProjectEuler
-Solutions to Project Euler in the Python Language
-
-https://projecteuler.net/archives
+Solutions to [Project Euler](https://projecteuler.net/archives) in the Python Language
 
 
 # Did You Know about Project Euler?
